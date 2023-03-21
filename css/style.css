@@ -102,7 +102,11 @@ body{
     font-size: 20px;
     font-weight: 700;
   }
-  
+  .home-sidebar-list{
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+  }
   .sidebar-list {
     padding: 0;
     margin-top: 15px;
