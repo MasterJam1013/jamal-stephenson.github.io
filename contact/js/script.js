@@ -9,7 +9,7 @@ function handleSubmit(event) {
 	const message = document.getElementById("message").value;
 	const data = { name, email, message };
 	// Replace the URL below with your server-side script to handle the form data
-	fetch("http://example.com/contact.php", {
+	fetch("https://example.com/contact.php", {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(data),
