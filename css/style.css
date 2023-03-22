@@ -267,10 +267,8 @@ body{
   }
   /* Home Top Section */
   .home-top-section{
-    background-image: url('');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+   background-color:rgb(33, 35, 45);
+   padding:1rem;
   }
   /* End Home Top Section */
   /* About */
