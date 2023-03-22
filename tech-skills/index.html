@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body>
-    <header class="header font-weight-bold">
-        <div class="menu-icon" onclick="openSidebar()">
+    <div class="grid-container">
+    
+        <!-- Header -->
+        <header class="header">
+          <div class="menu-icon" onclick="openSidebar()">
             <span class="material-symbols-outlined">menu</span>
           </div>
           <div class="header-left">
@@ -22,95 +25,104 @@
               <span class="material-symbols-outlined">email</span>
               </a>
           </div>
-    </header>
-         <!-- Sidebar -->
-         <aside id="sidebar">
-            <div class="sidebar-title">
-              <div class="sidebar-brand">
-                <span class="material-symbols-outlined">device_hub</span>Developer Jam
-              </div>
-              <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+        </header>
+        <!-- End Header -->
+  
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <div class="home-sidebar-title">
+            <div class="sidebar-brand">
+              <span class="material-symbols-outlined">device_hub</span>Developer Jam
             </div>
-    
-            <ul class="sidebar-list">
-              <li class="sidebar-list-item">
-                <a href="/portfolio/" target="_self">
-                    <span class="material-symbols-outlined">
-                        home
-                        </span> Home
-                </a>
-              </li>
-              <!-- About Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/about" target="_self">
-                    <span class="material-symbols-outlined">person</span> About Jamal
-                </a>
-              </li>
-              <!-- Tech Skills Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/tech-skills" target="_self">
-                    <span class="material-symbols-outlined">code</span> Technical Skills
-                </a>
-              </li>
-              <!-- Software Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/software-projects" target="_self">
-                    <span class="material-symbols-outlined">developer_mode</span> Software Projects
-                </a>
-              </li>
-              <!-- Hardware Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/hardware-projects" target="_self">
-                    <span class="material-symbols-outlined">
-                        hardware
-                        </span> Hardware Projects
-                </a>
-              </li>
-              <!-- Youtube Link -->
-              <li class="sidebar-list-item">
-                <a href="https://www.youtube.com/channel/UC9U-aIvIEPEr8LRJQNrXaZQ" target="_blank">
-                    <span class="material-symbols-outlined">youtube_activity</span> Streams
-                </a>
-              </li>
-            </ul>
-          </aside>
-          <!-- End Sidebar -->
-    <main>
-      <section>
-        <h2>Web Development</h2>
-        <p>HTML5</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 90%;">90%</div>
-        </div>
-        <p>CSS3</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 85%;">85%</div>
-        </div>
-        <p>JavaScript</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 75%;">75%</div>
-        </div>
-        <p>PHP</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 80%;">80%</div>
-        </div>
-      </section>
-      <section>
-        <h2>Programming Languages</h2>
-        <p>Java</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 85%;">85%</div>
-        </div>
-        <p>Python</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 70%;">70%</div>
-        </div>
-        <p>C++</p>
-        <div class="skill-bar">
-          <div class="skill-level" style="width: 60%;">60%</div>
-        </div>
-      </section>
-    </main>
+            <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+          </div>
+  
+          <ul class="home-sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="/portfolio/" target="_self">
+                  <span class="material-symbols-outlined">
+                      home
+                      </span> Home
+              </a>
+            </li>
+            <!-- About Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/about" target="_self">
+                  <span class="material-symbols-outlined">person</span> About Jamal
+              </a>
+            </li>
+            <!-- Tech Skills Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/tech-skills" target="_self">
+                  <span class="material-symbols-outlined">code</span> Technical Skills
+              </a>
+            </li>
+            <!-- Software Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/software-projects" target="_self">
+                  <span class="material-symbols-outlined">developer_mode</span> Software Projects
+              </a>
+            </li>
+            <!-- Hardware Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/hardware-projects" target="_self">
+                  <span class="material-symbols-outlined">
+                      hardware
+                      </span> Hardware Projects
+              </a>
+            </li>
+            <!-- Youtube Link -->
+            <li class="sidebar-list-item">
+              <a href="https://www.youtube.com/channel/UC9U-aIvIEPEr8LRJQNrXaZQ" target="_blank">
+                  <span class="material-symbols-outlined">youtube_activity</span> Streams
+              </a>
+            </li>
+            
+          </ul>
+        </aside>
+        <!-- End Sidebar -->
+  
+        <!-- Main -->
+        <main class="main-container">
+            <section>
+                <h2>Web Development</h2>
+                <p>HTML5</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%;">90%</div>
+                </div>
+                <p>CSS3</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%;">85%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%;">75%</div>
+                </div>
+                <p>PHP</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+              </section>
+              <section>
+                <h2>Programming Languages</h2>
+                <p>Java</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%;">85%</div>
+                </div>
+                <p>Python</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+                <p>C++</p>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 60%;">60%</div>
+                </div>
+              </section>
+        </main>
+        <!-- End Main -->
+        
+      </div>
+     
     <footer>
       <p>&copy; 2023 My Company. All rights reserved.</p>
     </footer>

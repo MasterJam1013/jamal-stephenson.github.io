@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body>
-    <header class=" header font-weight-bold">
-        <div class="menu-icon" onclick="openSidebar()">
+    <div class="grid-container">
+    
+        <!-- Header -->
+        <header class="header">
+          <div class="menu-icon" onclick="openSidebar()">
             <span class="material-symbols-outlined">menu</span>
           </div>
           <div class="header-left">
@@ -19,90 +22,100 @@
             <a href="mailto:jamalrashad1013@gmail.com">
               <span class="material-symbols-outlined">email</span>
               </a>
-          </div>    
+          </div>
         </header>
-          <!-- Sidebar -->
-          <aside id="sidebar">
-            <div class="sidebar-title">
-              <div class="sidebar-brand">
-                <span class="material-symbols-outlined">device_hub</span>Developer Jam
-              </div>
-              <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+        <!-- End Header -->
+  
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <div class="home-sidebar-title">
+            <div class="sidebar-brand">
+              <span class="material-symbols-outlined">device_hub</span>Developer Jam
             </div>
-    
-            <ul class="sidebar-list">
-              <li class="sidebar-list-item">
-                <a href="/portfolio/" target="_self">
-                    <span class="material-symbols-outlined">
-                        home
-                        </span> Home
-                </a>
-              </li>
-              <!-- About Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/about" target="_self">
-                    <span class="material-symbols-outlined">person</span> About Jamal
-                </a>
-              </li>
-              <!-- Tech Skills Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/tech-skills" target="_self">
-                    <span class="material-symbols-outlined">code</span> Technical Skills
-                </a>
-              </li>
-              <!-- Software Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/software-projects" target="_self">
-                    <span class="material-symbols-outlined">developer_mode</span> Software Projects
-                </a>
-              </li>
-              <!-- Hardware Link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/hardware-projects" target="_self">
-                    <span class="material-symbols-outlined">
-                        hardware
-                        </span> Hardware Projects
-                </a>
-              </li>
-              <!-- Youtube Link -->
-              <li class="sidebar-list-item">
-                <a href="https://www.youtube.com/channel/UC9U-aIvIEPEr8LRJQNrXaZQ" target="_blank">
-                    <span class="material-symbols-outlined">youtube_activity</span> Streams
-                </a>
-              </li>
-            </ul>
-          </aside>
-          <!-- End Sidebar -->
+            <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+          </div>
+  
+          <ul class="home-sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="/portfolio/" target="_self">
+                  <span class="material-symbols-outlined">
+                      home
+                      </span> Home
+              </a>
+            </li>
+            <!-- About Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/about" target="_self">
+                  <span class="material-symbols-outlined">person</span> About Jamal
+              </a>
+            </li>
+            <!-- Tech Skills Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/tech-skills" target="_self">
+                  <span class="material-symbols-outlined">code</span> Technical Skills
+              </a>
+            </li>
+            <!-- Software Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/software-projects" target="_self">
+                  <span class="material-symbols-outlined">developer_mode</span> Software Projects
+              </a>
+            </li>
+            <!-- Hardware Link -->
+            <li class="sidebar-list-item">
+              <a href="/portfolio/hardware-projects" target="_self">
+                  <span class="material-symbols-outlined">
+                      hardware
+                      </span> Hardware Projects
+              </a>
+            </li>
+            <!-- Youtube Link -->
+            <li class="sidebar-list-item">
+              <a href="https://www.youtube.com/channel/UC9U-aIvIEPEr8LRJQNrXaZQ" target="_blank">
+                  <span class="material-symbols-outlined">youtube_activity</span> Streams
+              </a>
+            </li>
+            
+          </ul>
+        </aside>
+        <!-- End Sidebar -->
+  
+        <!-- Main -->
+        <main class="main-container">
+            <section id="about-section">
+                <div class="about-section text-primary">
+                <div class="about-section-title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="about-section-subtitle">
+                    <h2>Our Story</h2>
+                </div>
+                <div class="about-section-para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor, libero eget fringilla lobortis, nibh velit egestas nisi, at eleifend ipsum ex sed risus. Suspendisse potenti. Nulla facilisi.</p>
+                </div>
+            </div>
+              </section>
+              <section id="about-team-section">
+                <div class="about-team-section text-primary">
+                    <div class="about-team-subtitle">
+                        <h2>Our Team</h2>
+                    </div>
+        <div class="about-team-list">
+            <ul>
+                <li>Jamal Stephenson - CEO</li>
+                <li>Samson Stephenson - Barketing Director</li>
+                <li>Jamal Stephenson - Developer</li>
+              </ul>
+        </div>
+                </div>
+              </section>
+  
+        </main>
+        <!-- End Main -->
+        
+      </div>
+
  
-    <main>
-      <section id="about-section">
-        <div class="about-section text-primary">
-        <div class="about-section-title">
-            <h1>About Us</h1>
-        </div>
-        <div class="about-section-subtitle">
-            <h2>Our Story</h2>
-        </div>
-        <div class="about-section-para">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor, libero eget fringilla lobortis, nibh velit egestas nisi, at eleifend ipsum ex sed risus. Suspendisse potenti. Nulla facilisi.</p>
-        </div>
-    </div>
-      </section>
-      <section id="about-team-section">
-        <div class="about-team-section text-primary">
-            <div class="about-team-subtitle">
-                <h2>Our Team</h2>
-            </div>
-<div class="about-team-list">
-    <ul>
-        <li>John Doe - CEO</li>
-        <li>Jane Smith - Marketing Director</li>
-        <li>Bob Johnson - Developer</li>
-      </ul>
-</div>
-        </div>
-      </section>
-    </main>
     <footer>
       <p class="text-secondary">&copy; 2023 My Company. All rights reserved.</p>
     </footer>
