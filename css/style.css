@@ -267,7 +267,7 @@ body{
   }
   /* Home Top Section */
   .home-top-section{
-   background-color:rgb(33, 35, 45);
+   color: #f5f5f5!important;
    padding:1rem;
   }
   /* End Home Top Section */
@@ -404,6 +404,10 @@ p {
       gap: 10px;
       margin-bottom: 0;
     }
+    .home-top-section{
+      background-color:rgb(33, 35, 45);
+      padding:1rem;
+     }
   
     .charts {
       grid-template-columns: 1fr;
