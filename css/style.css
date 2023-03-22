@@ -15,8 +15,7 @@ body{
 
   
 .material-icons-outlined, span.material-symbols-outlined{
-  vertical-align: text-bottom;
-    line-height: 1px;
+  vertical-align: middle;
 }
 
 .text-primary{
