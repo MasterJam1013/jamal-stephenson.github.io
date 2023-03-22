@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body>
-    <header>
-      <h1>My Project</h1>
+    <header class="header font-weight-bold">
+        <div class="menu-icon" onclick="openSidebar()">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+          <div class="header-left">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <div class="header-right">
+            <a href="mailto:jamalrashad1013@gmail.com">
+              <span class="material-symbols-outlined">email</span>
+              </a>
+          </div>
       
           <!-- Sidebar -->
           <aside id="sidebar">
@@ -60,12 +70,6 @@
               <li class="sidebar-list-item">
                 <a href="https://www.youtube.com/channel/UC9U-aIvIEPEr8LRJQNrXaZQ" target="_blank">
                     <span class="material-symbols-outlined">youtube_activity</span> Streams
-                </a>
-              </li>
-              <!-- Contact link -->
-              <li class="sidebar-list-item">
-                <a href="/portfolio/contact" target="_self">
-                    <span class="material-symbols-outlined">contact_support</span> Inquire About Services
                 </a>
               </li>
             </ul>

@@ -14,7 +14,7 @@ body{
   }
 
   
-.material-icons-outlined{
+.material-icons-outlined, span.material-symbols-outlined{
   vertical-align: text-bottom;
     line-height: 1px;
 }
@@ -42,6 +42,9 @@ body{
 .font-weight-bold {
     font-weight: 600;
   }
+ .text-center{
+  text-align: center;
+ } 
 .grid-container{
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr 1fr;
