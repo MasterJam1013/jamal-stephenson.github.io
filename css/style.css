@@ -267,7 +267,7 @@ body{
   }
   /* Home Top Section */
   .home-top-section{
-   color: #21232d!important;
+   color: #21232d;
    padding:1rem;
   }
   /* End Home Top Section */
@@ -406,6 +406,7 @@ p {
     }
     .home-top-section{
       background-color:rgb(33, 35, 45);
+      color:#f5f5f5;
       padding:1rem;
      }
   
