@@ -263,7 +263,7 @@ body{
   
   main {
     padding: 20px;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
   
