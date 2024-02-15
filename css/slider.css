@@ -1,0 +1,63 @@
+.slider {
+    position: relative;
+    width:100%;
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides .slide {
+    display: none; /* Hide slides initially */
+    width: 100%;
+    animation-fill-mode: forwards; /* Makes sure the animation stays at the last keyframe when finished */
+  }
+  
+  /* Slide animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes slideIn {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+  }
+  
+  @keyframes scaleUp {
+    from {transform: scale(0.5);}
+    to {transform: scale(1);}
+  }
+  
+  @keyframes rotateIn {
+    from {transform: rotate(-360deg);}
+    to {transform: rotate(0deg);}
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .slide h2 {font-size: 20px;}
+    .slide p {font-size: 18px;}
+  }
+  
