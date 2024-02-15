@@ -67,9 +67,6 @@ body{
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
   }
   
-  /* .menu-icon {
-    display: none;
-  } */
   
 /*  SIDEBAR  */
   
@@ -81,6 +78,7 @@ body{
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    display:none;
   }
   
   .home-sidebar-title {
