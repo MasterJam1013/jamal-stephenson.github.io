@@ -67,7 +67,9 @@ body{
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
   }
   
-  
+  button#desktop-burgerbtn {
+    width: 3%;
+}
 /*  SIDEBAR  */
   
   #sidebar {
