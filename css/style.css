@@ -45,14 +45,12 @@ body{
  .text-center{
   text-align: center;
  } 
-.grid-container{
-    display: grid;
-    grid-template-columns: 20% 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas: 
-    "sidebar header header header header"
-    "sidebar main main main main";
-    height: auto;
+ .grid-container {
+
+	align-content: center;
+	align-items: center;
+	display: inline-block;
+	width: 100%;
 }
 /*  HEADER  */
 
