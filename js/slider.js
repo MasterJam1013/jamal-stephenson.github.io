@@ -41,3 +41,26 @@ function changeSlide(n) {
 document.addEventListener("DOMContentLoaded", function () {
   showSlide(currentSlide);
 });
+
+
+// Handle service card click with animation
+function handleCardClick(card) {
+  card.classList.add('clicked');
+  setTimeout(() => {
+      card.classList.remove('clicked');
+  }, 300);
+}
+
+// Mobile card auto-scroll behavior
+let currentIndex = 0;
+const cards = document.querySelectorAll('.service-item');
+function showNextCard() {
+  cards.forEach((card, index) => {
+      card.style.display = index === currentIndex ? 'block' : 'none';
+  });
+  currentIndex = (currentIndex + 1) % cards.length;
+}
+setInterval(showNextCard, 3000);  // 3-second delay between transitions
+
+// Initialize mobile view to show the first card
+showNextCard();
