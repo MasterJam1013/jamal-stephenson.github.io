@@ -48,7 +48,7 @@ function handleCardClick(card) {
   card.classList.add('clicked');
   setTimeout(() => {
       card.classList.remove('clicked');
-  }, 300);
+  }, 400);
 }
 
 // Function to handle mobile view (under 768px)
