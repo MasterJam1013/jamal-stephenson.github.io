@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Handle service card click with animation
+// Function to handle card click with animation
 function handleCardClick(card) {
   card.classList.add('clicked');
   setTimeout(() => {
@@ -51,16 +51,51 @@ function handleCardClick(card) {
   }, 300);
 }
 
-// Mobile card auto-scroll behavior
+// Function to handle mobile view (under 768px)
+function showNextCard() {
+  if (window.innerWidth < 768) {
+      cards.forEach((card, index) => {
+          card.style.display = index === currentIndex ? 'block' : 'none';
+      });
+      currentIndex = (currentIndex + 1) % cards.length;
+  } else {
+      // On desktop (768px and above), display all cards
+      cards.forEach(card => {
+          card.style.display = 'block';
+      });
+  }
+}
+
+// Function to initialize or update the card display based on screen size
+function handleResize() {
+  if (window.innerWidth < 768) {
+      // Start auto-scroll for mobile view
+      showNextCard();
+      if (!scrollInterval) {
+          scrollInterval = setInterval(showNextCard, 3000); // 3-second delay
+      }
+  } else {
+      // Clear interval when switching to desktop
+      if (scrollInterval) {
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+      }
+      showNextCard(); // Ensure all cards are shown on desktop
+  }
+}
+
+// Variables
 let currentIndex = 0;
 const cards = document.querySelectorAll('.service-item');
-function showNextCard() {
-  cards.forEach((card, index) => {
-      card.style.display = index === currentIndex ? 'block' : 'none';
-  });
-  currentIndex = (currentIndex + 1) % cards.length;
-}
-setInterval(showNextCard, 3000);  // 3-second delay between transitions
+let scrollInterval = null;
 
-// Initialize mobile view to show the first card
-showNextCard();
+// Initial check for window size
+handleResize();
+
+// Add event listener for window resizing
+window.addEventListener('resize', handleResize);
+
+// Initialize mobile view (for the first page load)
+if (window.innerWidth < 768) {
+  showNextCard();
+}
