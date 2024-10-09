@@ -398,6 +398,9 @@ p {
   
   /* Small <= 768px */
   @media screen and (max-width: 768px) {
+    .grid-container{
+      padding: 0 .25rem;
+    }
     .main-cards {
       grid-template-columns: 1fr;
       gap: 10px;
