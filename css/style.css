@@ -65,9 +65,7 @@ body{
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
   }
   
-  button#desktop-burgerbtn {
-    width: 3%;
-}
+
 /*  SIDEBAR  */
   
   #sidebar {
@@ -316,13 +314,10 @@ input, textarea {
 
 button {
   margin: .5rem 0rem!important;
-  background-color: #bebcbc;
-  color: #fff;
   text-align: center;
-  border-radius: .5rem!important;
   cursor: pointer;
   box-shadow: 1px 1px 2px #000;
-  width: 50%;
+  width: 20%;
   align-self: center;
 }
 button:hover{
