@@ -141,6 +141,8 @@ body{
   
   .main-container {
     grid-area: main;
+    margin: 0 auto;
+  padding: 20px;
   }
     
   .main-title > p {
