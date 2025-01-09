@@ -11,7 +11,20 @@
     width: 100%;
     animation-fill-mode: forwards; /* Makes sure the animation stays at the last keyframe when finished */
   }
-  
+  #slide1{
+    background: #ed0808;
+  }
+  #slide2{
+    background: #2196f3;
+  }
+  #slide3{
+    background: #16d555;
+    
+  }
+  #slide4{
+    background: #270bc9;
+    
+  }
   /* Slide animations */
   @keyframes fadeIn {
     from {opacity: 0;}

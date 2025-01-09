@@ -386,6 +386,7 @@ p {
   
     .menu-icon {
       display: inline;
+      font-size:1rem;
     }
   
     .sidebar-title > span {
